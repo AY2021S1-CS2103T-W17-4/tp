@@ -3,7 +3,6 @@ package seedu.address.logic.commands;
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 
 import java.util.List;
-import java.util.Set;
 
 import seedu.address.commons.core.Messages;
 import seedu.address.commons.core.index.Index;
@@ -28,6 +27,11 @@ public class RemarkCommand extends Command {
     private final Index index;
     private final Remark remark;
 
+    /**
+     * Constructor for a RemarkCommand
+     * @param index index to add remark to
+     * @param remark remark to be added
+     */
     public RemarkCommand(Index index, Remark remark) {
         requireAllNonNull(index, remark);
 
